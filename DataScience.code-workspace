@@ -62,8 +62,6 @@
 		"javascript.autoClosingTags": false,
 		"html.autoClosingTags": true,
 		"files.trimTrailingWhitespace": true,
-		"python.testing.unittestEnabled": false,
-		"python.testing.pytestEnabled": true,
 		"python.analysis.typeCheckingMode": "basic",
 	}
 }

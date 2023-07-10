@@ -1,6 +1,6 @@
 """Setup file for testing Python environment"""
-import numpy
 # import cowsay
+import numpy
 import requests
 import pytest
 
