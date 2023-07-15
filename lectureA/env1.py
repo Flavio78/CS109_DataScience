@@ -1,5 +1,6 @@
-def main():
+def main() -> None:
     print("here")
+    return None
 
 
 if __name__ == "__main__":

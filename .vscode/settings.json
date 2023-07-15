@@ -42,4 +42,6 @@
   "html.autoClosingTags": true,
   "files.trimTrailingWhitespace": true,
   "python.analysis.typeCheckingMode": "basic",
+  "editor.minimap.enabled": false,
+  "mypy-type-checker.importStrategy": "fromEnvironment",
 }
