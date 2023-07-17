@@ -4,5 +4,4 @@ __pycache__
 *.zip
 *.srt
 *-en.txt
-*.ipynb
 .ipynb_checkpoints
