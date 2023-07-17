@@ -5,6 +5,7 @@ import mplcursors  # type:ignore
 
 
 def main() -> None:
+    print("Start of the program")
     # x1 = np.linspace(0, 10, 500, endpoint=True)
     # Data matrix
     data = {
