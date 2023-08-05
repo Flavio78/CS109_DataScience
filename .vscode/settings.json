@@ -29,6 +29,7 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.fontLigatures": false,
     "debug.console.closeOnEnd": true,
+    "python.formatting.provider": "none"
   },
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": true,
@@ -44,5 +45,6 @@
   "python.analysis.typeCheckingMode": "basic",
   "editor.minimap.enabled": false,
   "mypy-type-checker.importStrategy": "fromEnvironment",
-  "python.linting.enabled": true,
+  "notebook.consolidatedRunButton": true,
+  "notebook.formatOnSave.enabled": false,
 }

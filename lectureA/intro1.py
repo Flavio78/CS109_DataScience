@@ -1,7 +1,7 @@
 """Review of Ptyhon for ISLP"""
 import numpy as np
 from matplotlib.pyplot import subplots, show  # type: ignore
-from matplotlib.markers import MarkerStyle  # type : ignore
+from matplotlib.markers import MarkerStyle  # type: ignore
 
 
 def main() -> None:
