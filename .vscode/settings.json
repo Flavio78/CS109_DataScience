@@ -27,7 +27,7 @@
   "[python]": {
     "editor.renderWhitespace": "all",
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.fontLigatures": false,
+    "editor.fontLigatures": true,
     "debug.console.closeOnEnd": true,
     "python.formatting.provider": "none"
   },
