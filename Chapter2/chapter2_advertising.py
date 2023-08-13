@@ -40,8 +40,8 @@ def tv_budget() -> None:
     # Sort the data
     idx = np.argsort(df_adv.TV)  # Get indices ordered from lowest to highest values
     # Get the actual data in the order from above
-    data_x = df_adv.TV.iloc[idx]
-    data_y = df_adv.sales.iloc[idx]
+    data_x: Series[float] = df_adv.TV.iloc[idx]
+    data_y: Series[float] = df_adv.sales.iloc[idx]
     # Get a subset of the data
     idx2 = Index([7, 12, 34, 39, 74, 101, 109, 172])
     df_adv_TV = data_x.iloc[idx2]  # df_adv.TV[5:13]
@@ -54,7 +54,9 @@ def tv_budget() -> None:
     # then the appropriate method would be `argmin()'.
 
     # Create some artificial x-values (might not be in the actual dataset)
-    x = np.linspace(np.min(data_x), np.max(data_x))
+    x = np.linspace(
+        np.min(np.array(data_x, dtype=float)), np.max(np.array(data_x, dtype=float))
+    )
 
     # Initialize the y-values to zero
     y = np.zeros((len(x)))
