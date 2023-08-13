@@ -47,4 +47,6 @@
   "mypy-type-checker.importStrategy": "fromEnvironment",
   "notebook.consolidatedRunButton": true,
   "notebook.formatOnSave.enabled": false,
+  "terminal.integrated.confirmOnExit": "always",
+  "debug.confirmOnExit": "always",
 }
