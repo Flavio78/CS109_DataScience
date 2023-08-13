@@ -15,9 +15,27 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-	"printf": {
-		"prefix": "printf",
+	"print_format": {
+		"prefix": "printfmt",
 		"body": "print(f\"${1:message}:\\n{${2:object}}\")",
-		"description": "print with formatted string and object"
+		"description": "Code snippent for print with formatted string and object"
 	},
+	"main_function": {
+		"prefix": "mainfunc",
+		"body": [
+			"def main() -> None:",
+			"\t\"\"\"",
+			"\t\tMain function()",
+			"\tReturns:",
+			"\t\tNone: this function returns no value",
+			"\t\"\"\"",
+			"\tprint(\"Start of program\")",
+			"\t${0}# my code here",
+			"\tprint(\"End of program\")",
+			"\treturn None\n\n",
+			"if __name__ == \"__main__\":",
+			"\tmain()\n"
+		],
+		"description": "Code snippet for skeleton of main function"
+	}
 }
