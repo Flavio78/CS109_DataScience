@@ -49,4 +49,5 @@
   "notebook.formatOnSave.enabled": false,
   "terminal.integrated.confirmOnExit": "always",
   "debug.confirmOnExit": "always",
+  "git.postCommitCommand": "push",
 }
