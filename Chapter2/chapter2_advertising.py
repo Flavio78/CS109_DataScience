@@ -25,7 +25,10 @@ def find_nearest(array, value):
 def tv_budget() -> None:
     """
     Advertising for tv bugdet vs sales.
-    Code from: https://harvard-iacs.github.io/2018-CS109A/lectures/lecture-4/demo/
+
+    See Also
+    --------
+    Code forked from: https://harvard-iacs.github.io/2018-CS109A/lectures/lecture-4/demo/
 
     Parameters
     ----------
@@ -38,10 +41,23 @@ def tv_budget() -> None:
     # Read data
     df_adv = read_csv("Advertising.csv")
     # Sort the data
-    idx = np.argsort(df_adv.TV)  # Get indices ordered from lowest to highest values
-    # Get the actual data in the order from above
-    data_x: Series[float] = df_adv.TV.iloc[idx]
-    data_y: Series[float] = df_adv.sales.iloc[idx]
+    """
+        idx = np.argsort(df_adv.TV)  # Get indices ordered from lowest to highest values
+        # Get the actual data in the order from above
+        data_x: Series[float] = df_adv.TV.iloc[idx]
+        data_y: Series[float] = df_adv.sales.iloc[idx]
+    """
+
+    # Zip the two Series and sort based on the values of series1
+    zipped_sorted = sorted(zip(df_adv["TV"], df_adv["sales"]))
+
+    # Unzip the sorted zipped list back into two separate Series
+    sorted_series1, sorted_series2 = zip(*zipped_sorted)
+
+    # Convert the tuples back to Series
+    data_x = Series(sorted_series1, dtype=float)
+    data_y = Series(sorted_series2, dtype=float)
+
     # Get a subset of the data
     idx2 = Index([7, 12, 34, 39, 74, 101, 109, 172])
     df_adv_TV = data_x.iloc[idx2]  # df_adv.TV[5:13]
